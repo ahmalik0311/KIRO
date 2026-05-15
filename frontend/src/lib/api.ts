@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { Product, PaginatedResponse } from '@/types/product';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
+const API_BASE_URL =  'https://jutay.co/collections/all/products.json';
 
 export const api = {
   getProducts: async (
