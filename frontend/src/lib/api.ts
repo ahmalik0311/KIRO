@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { Product, PaginatedResponse } from '@/types/product';
 
-const API_BASE_URL =  'http://localhost:3001';
+const API_BASE_URL =  'https://kiro-backend.vercel.app'
 
 export const api = {
   getProducts: async (
