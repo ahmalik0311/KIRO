@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+/* ============================================================
+   GLOBAL DESIGN TOKENS — change here, changes everywhere
+   ============================================================ */
+:root {
+  /* Brand Colors */
+  --color-bg:          #111111;
+  --color-bg-soft:     #161616;
+  --color-card:        #1E1E1E;
+  --color-card-hover:  #252525;
+  --color-border:      #2A2A2A;
+  --color-border-soft: #222222;
+
+  --color-text:        #FFFFFF;
+  --color-text-muted:  #A0A0A0;
+  --color-text-faint:  #555555;
+
+  --color-accent:      #FF6B35;
+  --color-accent-hover:#FF8555;
+  --color-accent-dim:  rgba(255, 107, 53, 0.15);
+  --color-accent-glow: rgba(255, 107, 53, 0.25);
+
+  --color-gold:        #C8A96B;
+  --color-gold-hover:  #D9BC82;
+  --color-gold-dim:    rgba(200, 169, 107, 0.15);
+
+  /* Shadows */
+  --shadow-card:   0 4px 24px rgba(0,0,0,0.4);
+  --shadow-accent: 0 8px 32px rgba(255, 107, 53, 0.25);
+  --shadow-gold:   0 8px 32px rgba(200, 169, 107, 0.2);
+
+  /* Radius */
+  --radius-sm:  8px;
+  --radius-md:  12px;
+  --radius-lg:  16px;
+  --radius-xl:  24px;
+  --radius-2xl: 32px;
+}
+
+/* ============================================================
+   BASE
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  min-height: 100vh;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ============================================================
+   SCROLLBAR
+   ============================================================ */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--color-bg); }
+::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 999px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-text-faint); }
